@@ -1,0 +1,389 @@
+		/* Set full height for column layout */
+        .col9{
+			height: 100%!important;
+		}
+		
+		/* Sidebar column with scroll enabled */
+		.col3{
+			height: 100%;
+			overflow: auto;
+		}
+		
+		/* Info box styling (used for map legends or panels) */
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background-color:#f8f8f8 !important;
+            color: #444444 !important;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+			padding-top: 2px;
+        }
+		
+		/* Header inside info box */
+        .info h2 {
+            margin: 0 0 5px;
+        }
+		
+		/* Leaflet map container styling */
+        .leaflet-container {
+            background: #fff;
+            padding-right: 10px;
+        }
+		
+		/* Remove borders when popup content is scrollable */
+        .leaflet-popup-scrolled {
+            border-bottom: unset!important;
+            border-top: unset!important;
+        }
+		
+		/* General popup content sizing */
+        .leaflet-popup-content{
+            max-height: 70vh;
+            width: auto !important;
+        }
+		
+		/* Popup content for media (images, etc.) */
+        .leaflet-popup-content.media{
+            width: auto!important;
+            height: auto!important;
+            overflow: auto;
+        }
+		
+		/* Table headers inside popups */
+        .leaflet-popup-content th {
+            text-align: left;
+            vertical-align: top;
+            min-width: 200px;
+        }
+		
+		/* Table cells inside popups */
+        .leaflet-popup-content td {
+            min-width: 200px;
+        }
+		
+		/* Images inside popup tables */
+        .leaflet-popup-content td img {
+            max-height: 60vh;
+            width: auto !important;
+        }
+
+        /* Tooltip styling (remove default background and borders) */
+		.leaflet-tooltip {
+            background: none;
+            box-shadow: none;
+            border: none;
+        }
+		
+		/* Remove tooltip arrow indicators */
+        .leaflet-tooltip-left:before, 
+		.leaflet-tooltip-right:before {
+            border: 0px;
+        }
+        
+		/* General color override for icons, links, and map */
+        .fa, 
+		.leaflet-container, a {
+            color: #444444 !important;
+        }
+		
+		/* Styling for map control buttons (zoom, search, measure, etc.) */
+        .leaflet-control-zoom-in, 
+		.leaflet-control-zoom-out,
+        .leaflet-control-locate a,
+        .leaflet-touch .leaflet-control-geocoder-icon,
+        .leaflet-control-search .search-button,
+        .leaflet-control-measure {
+            background-color: #f8f8f8 !important;
+            border-radius: 0px !important;
+            color: #444444 !important;
+        }
+		
+		/* Small abstract button (collapsed legend icon) */
+        .abstract {
+            font: bold 18px 'Lucida Console', Monaco, monospace;
+            text-indent: 1px;
+            background-color: #f8f8f8 !important;
+            width: 30px !important;
+            color: #444444 !important;
+            height: 30px !important;
+            text-align: center !important;
+            line-height: 30px !important;
+        }
+		
+		/* Expanded legend panel */
+        .abstractUncollapsed {
+            padding: 6px 8px;
+            font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+            background-color:#f8f8f8 !important;
+            color: #444444 !important;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            max-width: 40%;
+        }
+		
+		/* General control styling */
+        .leaflet-control {
+            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4)!important;
+            border-radius: 4px;
+			margin-top: 0px !important;
+        }
+		
+		/* Border styling for controls on touch devices */
+        .leaflet-touch .leaflet-control-layers,
+        .leaflet-touch .leaflet-bar,
+        .leaflet-control-search,
+        .leaflet-control-measure {
+            border: 3px solid rgba(255,255,255,.4) !important;
+        }
+		
+		/* Attribution link color */
+        .leaflet-control-attribution a {
+            color: #0078A8 !important;
+        }
+		
+		/* Scale bar styling */
+        .leaflet-control-scale-line {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            color: black !important;
+        }
+		
+		/* Search button styling */
+        .leaflet-control-search .search-button {
+            width: 30px !important;
+            height: 30px !important;
+            font-size: 13px !important;
+            text-align: center !important;
+            cursor: pointer;
+        }
+		
+		/* Center icon inside search button */
+        .search-button.fa.fa-binoculars{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+		
+		/* Measure tool button sizing */
+        .leaflet-control-measure .leaflet-control {
+            width: 30px !important;
+            height: 30px !important;
+        }
+		
+		/* Remove background from search control container */
+        .leaflet-container .leaflet-control-search{
+            background: none !important;
+        }
+		
+		/* Search input field styling */
+        .leaflet-control-search .search-input {
+            margin: 0px 0px 0px 0px !important;
+            height: 30px !important;
+        }
+		
+		/* Measure control container */
+        .leaflet-control-measure {
+            background: none!important;
+            border-radius: 4px !important;
+        }
+		
+		/* Measure interaction area */
+        .leaflet-control-measure .leaflet-control-measure-interaction {
+            background-color: #f8f8f8 !important;
+        }
+		
+		/* Measure toggle button styling */
+        .leaflet-touch .leaflet-control-measure
+        .leaflet-control-measure-toggle,
+        .leaflet-touch .leaflet-control-measure
+        .leaflet-control-measure-toggle:hover {
+            width: 30px !important;
+            height: 30px !important;
+            border-radius: 0px !important;
+            background-color: #f8f8f8 !important;
+            color: #444444 !important;
+            font-size: 13px;
+            line-height: 30px;
+            text-align: center;
+            text-indent: 0%;
+        }
+		
+		/* Layer control panel styling */
+        .leaflet-control-layers {
+			padding: 2px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+            background-color: #f8f8f8 !important;
+            color: #444444 !important;
+
+		}
+		
+		/* Expanded layers panel */
+        .leaflet-control-layers-expanded {
+			padding-left: 6px;
+		}	
+		
+		/* Custom toggle button for layers */
+        .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+            display: block;
+            background-image: none;
+			text-decoration: none;
+            margin-bottom: 3px;
+        }
+		
+		/* Replace toggle icon with custom symbol */
+        .leaflet-control-layers-expanded .leaflet-control-layers-toggle::after {
+            content: '»';
+            font-size: x-large;
+            color: #444444 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+		
+		/* Z-index adjustments for map layers */
+        .leaflet-overlay-pane {
+            z-index: 550;
+        }
+        .leaflet-popup-pane {
+            z-index: 700;
+        }
+		
+		/* Center content inside custom control button */
+        #gcd-button-control {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+		
+		/* Title section with logo and text */
+		.title-container {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			gap: 15px;
+		}
+
+		/* Logo inside title */
+		#titleLogo {
+			height: 50px;
+			width: auto;
+			margin-left: 10px;
+		}
+		
+		/* Filter panel styling */
+		#filter-panel {
+			font-size: 12px;
+			padding: 5px;
+		}
+
+		/* Inputs and selects inside filter panel */
+		#filter-panel input,
+		#filter-panel select {
+			width: 100%;
+			margin-bottom: 5px;
+			font-size: 12px;
+		}
+
+		/* Buttons inside filter panel */
+		#filter-panel button {
+			margin-top: 5px;
+			margin-right: 5px;
+			font-size: 12px;
+			padding: 3px 6px;
+		}
+		
+		/* Icon inside popups */
+		.popup-icon {
+			width: 16px;
+			height: 16px;
+			margin-right: 6px;
+			vertical-align: middle;
+		}
+		
+		/* Legend title styling */
+		.legend-title {
+			font-size: 16px;
+			font-weight: bold;
+			font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+			color: #444444;
+			margin-bottom: 6px;
+			margin-top: 0px;
+		}
+
+		/* Spacing inside legend */
+		.legend-space {
+			height: 8px;
+		}
+
+		/* Static legend items */
+		.legend-static-item {
+			font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			color: #444444;
+		}
+		
+		/* Standard (Desktop) */
+		#control-panel {
+		  width: 300px;
+		  max-height: 80vh;
+		  overflow-y: auto;
+		}
+
+		/* Handy */
+		@media (max-width: 768px) {
+		  #control-panel {
+			width: 90%;
+			left: 5%;
+			right: 5%;
+			top: 10px;
+			max-height: 60vh;
+			font-size: 14px;
+		  }
+		}
+		
+		/* MOBILE: Layer Control kompakter */
+		@media (max-width: 768px) {
+
+		  .leaflet-control-layers {
+			font-size: 12px;
+			max-width: 85vw;
+		  }
+
+		  .leaflet-control-layers-list {
+			max-height: 50vh;
+			overflow-y: auto;
+		  }
+
+		  .legend-title {
+			font-size: 14px;
+		  }
+
+		  .legend-static-item {
+			font-size: 12px;
+		  }
+		}
+		
+		@media (max-width: 768px) {
+
+		  #filter-panel {
+			font-size: 11px;
+			padding: 4px;
+		  }
+
+		  #filter-panel input,
+		  #filter-panel select {
+			font-size: 11px;
+			padding: 2px;
+		  }
+
+		  #filter-panel button {
+			font-size: 11px;
+			padding: 2px 4px;
+		  }
+		}
