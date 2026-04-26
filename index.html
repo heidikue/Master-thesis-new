@@ -507,7 +507,7 @@
                     </tr>\
                     <tr>\
                         <th scope="row"><img src="images/Existing.png" class="popup-icon">Existing crags</th>\
-                        <td class="visible-with-data" id="Existing crags">' + (feature.properties['Existing crags'] !== null ? autolinker.link(String(feature.properties['Existing crags']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td class="visible-with-data" id="Existing crags">' + (feature.properties['Existing crags'] !== null  ? autolinker.link(feature.properties['Existing crags'] == 1? 'Existing crag': 'Possible crag'): '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row"><img src="images/Nationalpark.png" class="popup-icon">Protected area</th>\
@@ -725,6 +725,7 @@
 			{
 				label: '<b>Map</b>',
 				selectAllCheckbox: true,
+				collapsed: true,
 				children: [
 					{label: '<img src="legend/Naturereserve_2.png" /> Nature reserve', layer: layer_Naturereserve_2},
 					{label: '<img src="legend/Nationalpark_1.png" /> National park', layer: layer_Nationalpark_1},
